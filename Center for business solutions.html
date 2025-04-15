@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre for Business Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #f8f9fa; 
+            color: #333; 
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar { 
+            margin-bottom: 40px;
+        }
+        .hero-section {
+            background-image: url('pictures/businesswebwall2.jpg'); /* Ensure this path is correct */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            position: relative;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+        .hero-header {
+            background-color: rgba(0, 0, 0, 0.7);  /* Solid background */
+            color: white;  /* Text color */
+            font-size: 3rem;
+            font-weight: bold; /* Bold font */
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center; /* Center the text */
+            width: 100%;
+            position: absolute; /* Position it inside the hero section */
+            top: 20px;  /* Adjust the top spacing */
+            left: 50%;
+            transform: translateX(-50%);
+            animation: moveSideToSide 4s ease-in-out infinite; /* Animation applied here */
+        }
+
+        @keyframes moveSideToSide {
+            0% {
+                transform: translateX(-50%) translateX(-20px); /* Start slightly to the left */
+            }
+            50% {
+                transform: translateX(-50%) translateX(20px); /* Move slightly to the right */
+            }
+            100% {
+                transform: translateX(-50%) translateX(-20px); /* End slightly to the left again */
+            }
+        }
+
+        /* Content section to appear below the h1, on top of the image */
+        .content {
+            position: absolute;
+            top: 120px; /* Positioning the content below the h1 */
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);  /* Transparent background for overlay effect */
+            color: white;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10; /* Ensures the content is on top of the background */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Ensures the logo appears in the navbar */
+        .navbar-brand img {
+            max-width: 50px; /* Adjust the size of the logo */
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-weight: bold; /* Only the h1 is bold */
+            display: inline-block; /* To ensure the logo and h1 appear together */
+            position: relative;
+        }
+
+        h2 {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.5);
+            font-size: 2rem;
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        /* Fade-in and fade-out effect for the logo */
+        .logo {
+            position: absolute;
+            top: 0;
+            left: -60px; /* Adjust logo's position */
+            animation: fadeInOut 7s ease-in-out infinite; /* 7s fade in and out animation */
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0; /* Start invisible */
+            }
+            50% {
+                opacity: 1; /* Fully visible at halfway */
+            }
+            100% {
+                opacity: 0; /* End invisible again */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">
+                <img src="pictures/b&w.jpg" alt="Logo"> <!-- Replace logo.png with your logo file -->
+                Black & White Smart Solutions Hub Ltd
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Building and Construction.html">Building and Civil Construction Works</a></li>
+                            <li><a class="dropdown-item" href="Management & Consultancy.html">Management Consultancy Services</a></li>
+                            <li><a class="dropdown-item" href="Center for business solutions.html">Centre for Business Solutions</a></li>
+                            <li><a class="dropdown-item" href="General contracts.html">General Contract Services</a></li>
+                            <li><a class="dropdown-item" href="Procurement&Logistics.html">Procurement & Logistics Services</a></li>
+                            <li><a class="dropdown-item" href="Human-capital.html">Human Capital Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-header">
+            <h1>Centre for Business Solutions
+                <!-- Logo inside h1 -->
+                <img src="pictures/b&w.jpg" alt="Logo" class="logo">
+            </h1>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h2>Our Services Include</h2>
+            <ul>
+                <li>Business Strategy Development</li>
+                <li>Market Research</li>
+                <li>Financial Advisory</li>
+            </ul>
+            
+            <!-- Why Choose Us Section -->
+            <h2>Why Choose Us?</h2>
+            <p>With our industry experience and expertise, we deliver tailored solutions to meet the unique needs of your business. Our approach ensures efficiency, cost-effectiveness, and timely results.</p>
+
+            <!-- Our Team Section -->
+            <h2>Our Team</h2>
+            <p>Our team comprises seasoned professionals with diverse backgrounds in business strategy, market research, and finance. They work closely with clients to develop solutions that drive growth and success.</p>
+
+            <!-- Testimonials Section -->
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"Black & White Smart Solutions Hub Ltd has been instrumental in transforming our business operations. Their strategic advice and professional approach have greatly enhanced our efficiency." - Client A</p>
+                <p>"The team's expertise in market research and business strategy is unparalleled. Their support has been a game changer for our company." - Client B</p>
+            </div>
+
+            <h2>Contact Us</h2>
+            <p>Reach out to us for tailored business solutions that will help you achieve your business goals.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

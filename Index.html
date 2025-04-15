@@ -1,0 +1,314 @@
+git<!DOCTYPE html>  
+<html lang="en">  
+
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Black & White Smart Solutions Hub Ltd</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <style>  
+        .carousel-item {  
+            height: 500px;  
+            background-size: cover;  
+            background-position: center;  
+        }  
+    
+        .carousel-caption {  
+            background-color: rgba(0, 0, 0, 0.7);  
+            padding: 20px;  
+            border-radius: 8px;  
+        }  
+    
+        .gallery-carousel {  
+            height: 300px;  
+        }  
+    
+        .gallery-item {  
+            height: 100%;  
+            background-size: cover;  
+            background-position: center;  
+            transition: opacity 0.3s ease-in-out;
+        }  
+    
+        /* Ensure no margin and padding issues */  
+        body {  
+            padding: 0; /* No padding on body */  
+            margin: 0; /* No margin on body */  
+        }  
+    
+        .main-content {  
+            display: flex;  
+            flex-direction: column; /* Arrange children in a column */  
+            align-items: stretch; /* Center children horizontally */  
+            margin: 0;  
+            padding: 20px; /* Padding for content */  
+        }  
+        
+       /* Updated styling for the h1 with logo */
+h1 {
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    display: flex;
+    align-items: center; /* Vertically center the logo and text */
+    justify-content: center; /* Horizontally center the content */
+    font-size: 4rem; /* Increased font size for a bigger appearance */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Ensure text is centered */
+    line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+/* Updated styling for the logo */
+.logo {
+    max-height: 300px; /* Increased maximum height for a larger logo */
+    margin-right: 20px; /* Add space between logo and text */
+}
+
+
+        /* Add margin to the carousel to separate it from h1 */
+        .carousel-container {  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 400px;  
+            padding: 0; /* Remove padding to eliminate spacing */  
+            width: 100%; /* Ensure it occupies full width */  
+            margin-top: 40px; /* Add space between h1 and carousel */
+        }  
+
+        .testimonials-section, .contact-section {
+    padding: 40px 0; /* Add vertical padding for balanced spacing */
+    background-color: #f9f9f9; /* Light background for visual distinction */
+    border-top: 1px solid #ddd; /* Subtle border to separate sections */
+}
+
+.testimonials-section h2, .contact-section h2 {
+    font-size: 1.75rem; /* Slightly larger font size for headers */
+    font-weight: bold; /* Emphasize section headers */
+    color: #333; /* Professional dark color */
+}
+
+.testimonials-section .row, .contact-section p {
+    margin-top: 20px; /* Space between elements */
+}
+
+blockquote {
+    background-color: #fff; /* Add background to quotes for emphasis */
+    border-left: 5px solid #0c0c0cee; /* Highlight quotes with a colored border */
+    padding: 15px 20px; /* Add padding for better readability */
+    border-radius: 5px; /* Round corners for modern design */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+blockquote p {
+    font-size: 1.1rem; /* Slightly larger font for quotes */
+    color: #0e0d0d; /* Softer text color for readability */
+}
+
+blockquote footer {
+    font-size: 0.9rem; /* Smaller font for client name */
+    color: #080808; /* Lighter color for less emphasis */
+}
+
+/* Keyframes for color inversion animation */
+@keyframes invertColors {
+    0%, 100% {
+        color: black;
+        background-color: white;
+    }
+    50% {
+        color: white;
+        background-color: black;
+    }
+}
+
+/* Animation for the logo */
+.animate-logo {
+    animation: fadeIn 6s ease-out infinite, invertColors 6s ease-in-out infinite; /* Slowed down animation */
+}
+
+/* Animation for the header text */
+.animate-header {
+    animation: slideIn 5s ease-out 4s infinite, invertColors 6s ease-in-out infinite; /* Slowed down animation */
+}
+
+/* Animation for the intro text */
+.animate-text {
+    animation: fadeIn 6s ease-out 3s infinite, invertColors 6s ease-in-out infinite; /* Slowed down animation */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Keyframes for sliding-in effect */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+}
+
+
+
+
+</style>  
+    
+    
+</head>  
+
+<body>  
+    <!-- Navbar -->  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+        <div class="container-fluid">  
+            <a class="navbar-brand" href="#">Black & White Smart Solutions Hub Ltd</a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">  
+                <span class="navbar-toggler-icon"></span>  
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">  
+                <ul class="navbar-nav">  
+                    <li class="nav-item">  
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>  
+                    </li>  
+                    <li class="nav-item dropdown">  
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
+                            Services  
+                        </a>  
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">  
+                            <li><a class="dropdown-item" href="Building and Construction.html">Building and Civil Construction Works</a></li>  
+                            <li><a class="dropdown-item" href="Management & Consultancy.html">Management Consultancy Services</a></li>  
+                            <li><a class="dropdown-item" href="Center for business solutions.html">Centre for Business Solutions</a></li>  
+                            <li><a class="dropdown-item" href="General contracts.html">General Contract Services</a></li>  
+                            <li><a class="dropdown-item" href="Procurement&Logistics.html">Procurement & Logistics Services</a></li>  
+                            <li><a class="dropdown-item" href="Human-capital.html">Human Capital Development</a></li>  
+                        </ul>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="About.html">About</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="Contact.html">Contact</a>  
+                    </li>  
+                </ul>  
+            </div>  
+        </div>  
+    </nav>  
+
+    <!-- Main content -->  
+    <div class="container main-content">
+        <h1 class="text-center animate-header">
+            <img src="pictures/b&w.jpg" alt="Logo" class="logo animate-logo">
+            Black & White Smart Solutions Hub Ltd
+        </h1>
+        <p class="text-center animate-text">
+            <strong>We specialize in a range of services to meet your business needs, including:</strong>
+        </p>
+    </div>
+    
+        
+
+        <!-- Service Carousel (Directly below services section) -->  
+        <div id="serviceCarousel" class="carousel slide carousel-container" data-bs-ride="carousel">  
+            <div class="carousel-inner">  
+                <div class="carousel-item active" style="background-image: url('pictures/construction3.jpg');">  
+                    <div class="carousel-caption d-none d-md-block">  
+                        <h5>Building and Civil Construction Works</h5>  
+                    </div>  
+                </div>  
+                <div class="carousel-item" style="background-image: url('pictures/managementandconsultancywebwall.jpg');">  
+                    <div class="carousel-caption d-none d-md-block">  
+                        <h5>Management Consultancy Services</h5>  
+                    </div>  
+                </div>  
+                <div class="carousel-item" style="background-image: url('pictures/businesswebwall2.jpg');">  
+                    <div class="carousel-caption d-none d-md-block">  
+                        <h5>Centre for Business Solutions</h5>  
+                    </div>  
+                </div>  
+                <div class="carousel-item" style="background-image: url('pictures/contractswebwall.jpg');">  
+                    <div class="carousel-caption d-none d-md-block">  
+                        <h5>General Contract Services</h5>  
+                    </div>  
+                </div>  
+                <div class="carousel-item" style="background-image: url('pictures/logisticsandprocurement.jpg');">  
+                    <div class="carousel-caption d-none d-md-block">  
+                        <h5>Procurement & Logistics Services</h5>  
+                    </div>  
+                </div>  
+                <div class="carousel-item" style="background-image: url('pictures/humancapitalwebwall.jpg');">  
+                    <div class="carousel-caption d-none d-md-block">  
+                        <h5>Human Capital Development</h5>  
+                    </div>  
+                </div>  
+            </div>  
+            <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">  
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>  
+                <span class="visually-hidden">Previous</span>  
+            </button>  
+            <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">  
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>  
+                <span class="visually-hidden">Next</span>  
+            </button>  
+        </div>  
+
+        
+
+       <!-- Testimonials Section -->
+<div class="testimonials-section mt-5">
+    <h2 class="text-center mb-4">What Our Clients Say</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">"Excellent service and support!"</p>
+                <footer class="blockquote-footer">Dele Ayinde</footer>
+            </blockquote>
+        </div>
+        <div class="col-md-4">
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">"Professional and reliable team."</p>
+                <footer class="blockquote-footer">Mustapha Abdulkareem</footer>
+            </blockquote>
+        </div>
+        <div class="col-md-4">
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">"Highly recommended for your business needs!"</p>
+                <footer class="blockquote-footer">Anthony Chukwuemeka</footer>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Information Section -->
+<div class="contact-section mt-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p class="text-center mb-2">For inquiries, please reach us at:</p>
+    <p class="text-center">
+        <strong>Email:</strong> info@bwsmarthub.com |
+        <strong>Phone:</strong> +2348054134516, 08033156258, 08055114571
+    </p>
+</div>
+
+    <!-- Bootstrap JS and Popper -->  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+</body>  
+
+</html>

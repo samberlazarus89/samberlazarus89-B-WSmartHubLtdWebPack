@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management & Consultancy Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Logo Animation */
+        .logo-animation {
+            height: 100px;
+            margin-bottom: 10px;
+            animation: spin 3s linear infinite, pause-spin 9s steps(1, end) infinite;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes pause-spin {
+            0%, 95% {
+                animation-play-state: running;
+            }
+            96%, 100% {
+                animation-play-state: paused;
+            }
+        }
+        /* Racing Text Animation */
+        .text-animation {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #cfcecb; /* Gold color */
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: racing-text 3s infinite alternate;
+        }
+        @keyframes racing-text {
+            0% {
+                letter-spacing: 0;
+                transform: translateX(0);
+            }
+            50% {
+                letter-spacing: 10px;
+                transform: translateX(10px);
+            }
+            100% {
+                letter-spacing: 0;
+                transform: translateX(0);
+            }
+        }
+        .navbar {
+            margin-bottom: 40px;
+        }
+        .navbar-brand img {
+            height: 80px;
+            margin-right: 10px;
+        }
+        .service-image {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #fff;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .content {
+            padding: 40px 20px;
+            background-color: #111;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Content Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animated-section h2 {
+            animation: fadeIn 1s ease-out infinite alternate;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #c2c1bf;
+            border-bottom: 2px solid #0e0d0c;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .animated-section p {
+            animation: fadeIn 1.5s ease-out infinite alternate;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+            color: #EEE;
+            margin-top: 20px;
+        }
+        .animated-section ul {
+            animation: fadeIn 2s ease-out infinite alternate;
+            color: #FFF;
+            list-style-type: disc;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">
+                <img src="pictures/b&w.jpg" alt="Company Logo"> Black & White Smart Solutions Hub Ltd
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Building and Construction.html">Building and Civil Construction Works</a></li>
+                            <li><a class="dropdown-item" href="Management & Consultancy.html">Management Consultancy Services</a></li>
+                            <li><a class="dropdown-item" href="Center for business solutions.html">Centre for Business Solutions</a></li>
+                            <li><a class="dropdown-item" href="General contracts.html">General Contract Services</a></li>
+                            <li><a class="dropdown-item" href="Procurement&Logistics.html">Procurement & Logistics Services</a></li>
+                            <li><a class="dropdown-item" href="Human-capital.html">Human Capital Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="pictures/b&w.jpg" alt="Company Logo" class="logo-animation">
+        <h1 class="text-animation">Management & Consultancy Services</h1>
+    </div>
+
+    <!-- Service Details -->
+    <div class="content animated-section">
+        <h2>About Our Management & Consultancy Services</h2>
+        <p>We provide comprehensive management and consultancy services designed to help organizations achieve their strategic goals and operational excellence. Our team of experts works closely with 
+            you to understand your unique challenges and deliver tailored solutions that drive results.</p>
+        <img src="pictures/managementandconsultancywebwall.jpg" alt="Management and Consultancy" class="service-image">
+        <h3>Our Expertise</h3>
+        <ul>
+            <li>Strategic planning and execution</li>
+            <li>Business process improvement</li>
+            <li>Change management and organizational development</li>
+            <li>Project management and implementation support</li>
+        </ul>
+        <p>Contact us today to learn how we can help your organization thrive in a competitive market.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Black & White Smart Solutions Hub Ltd. All Rights Reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
