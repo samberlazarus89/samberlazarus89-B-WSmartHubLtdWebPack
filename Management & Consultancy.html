@@ -1,197 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Management & Consultancy Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-        }
-        .header {
-            text-align: center;
-            margin-top: 20px;
-        }
-        /* Logo Animation */
-        .logo-animation {
-            height: 100px;
-            margin-bottom: 10px;
-            animation: spin 3s linear infinite, pause-spin 9s steps(1, end) infinite;
-        }
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-        @keyframes pause-spin {
-            0%, 95% {
-                animation-play-state: running;
-            }
-            96%, 100% {
-                animation-play-state: paused;
-            }
-        }
-        /* Racing Text Animation */
-        .text-animation {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #cfcecb; /* Gold color */
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: racing-text 3s infinite alternate;
-        }
-        @keyframes racing-text {
-            0% {
-                letter-spacing: 0;
-                transform: translateX(0);
-            }
-            50% {
-                letter-spacing: 10px;
-                transform: translateX(10px);
-            }
-            100% {
-                letter-spacing: 0;
-                transform: translateX(0);
-            }
-        }
-        .navbar {
-            margin-bottom: 40px;
-        }
-        .navbar-brand img {
-            height: 80px;
-            margin-right: 10px;
-        }
-        .service-image {
-            max-width: 100%;
-            height: auto;
-            border: 5px solid #fff;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .content {
-            padding: 40px 20px;
-            background-color: #111;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-        .footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        /* Content Animation */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .animated-section h2 {
-            animation: fadeIn 1s ease-out infinite alternate;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #c2c1bf;
-            border-bottom: 2px solid #0e0d0c;
-            display: inline-block;
-            padding-bottom: 10px;
-        }
-        .animated-section p {
-            animation: fadeIn 1.5s ease-out infinite alternate;
-            font-size: 1.2rem;
-            line-height: 1.8;
-            text-align: justify;
-            color: #EEE;
-            margin-top: 20px;
-        }
-        .animated-section ul {
-            animation: fadeIn 2s ease-out infinite alternate;
-            color: #FFF;
-            list-style-type: disc;
-            margin-left: 20px;
-            line-height: 1.8;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Black & White Smart Solutions Hub Ltd</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="img/lo1.png" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="Index.html">
-                <img src="pictures/b&w.jpg" alt="Company Logo"> Black & White Smart Solutions Hub Ltd
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="Building and Construction.html">Building and Civil Construction Works</a></li>
-                            <li><a class="dropdown-item" href="Management & Consultancy.html">Management Consultancy Services</a></li>
-                            <li><a class="dropdown-item" href="Center for business solutions.html">Centre for Business Solutions</a></li>
-                            <li><a class="dropdown-item" href="General contracts.html">General Contract Services</a></li>
-                            <li><a class="dropdown-item" href="Procurement&Logistics.html">Procurement & Logistics Services</a></li>
-                            <li><a class="dropdown-item" href="Human-capital.html">Human Capital Development</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="About.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Header -->
-    <div class="header">
-        <img src="pictures/b&w.jpg" alt="Company Logo" class="logo-animation">
-        <h1 class="text-animation">Management & Consultancy Services</h1>
-    </div>
+<body class="contact-page">
 
-    <!-- Service Details -->
-    <div class="content animated-section">
-        <h2>About Our Management & Consultancy Services</h2>
-        <p>We provide comprehensive management and consultancy services designed to help organizations achieve their strategic goals and operational excellence. Our team of experts works closely with 
-            you to understand your unique challenges and deliver tailored solutions that drive results.</p>
-        <img src="pictures/managementandconsultancywebwall.jpg" alt="Management and Consultancy" class="service-image">
-        <h3>Our Expertise</h3>
+  <header id="header" style="background-color: white;">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="img/lo1.PNG" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+        <!-- <h1 class="sitename">Black & White Smart Solutions Hub Ltd</h1> <span>.</span> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
         <ul>
-            <li>Strategic planning and execution</li>
-            <li>Business process improvement</li>
-            <li>Change management and organizational development</li>
-            <li>Project management and implementation support</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li class="dropdown"><a href="about.html"><span>Who We Are </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="about.html#mission">Our Mission</a></li>
+                <li><a href="about.html#vision">Our Vision</a></li>
+                <li><a href="about.html#values">Our Values</a></li>
+                <li><a href="about.html#teams">Our Teams </a></li>
+              </ul>
+            </li></li>
+          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="services.html#building">Building and Civil Construction Works</a></li>
+              <li><a href="services.html#management">Management Consultancy Services</a></li>
+              <li><a href="services.html#solutions">Centre for Business Solutions</a></li>
+              <li><a href="services.html#contract">General Contract Services</a></li>
+              <li><a href="services.html#procurement">Procurement & Logistics Services</a></li>
+              <li><a href="services.html#capital">Human Capital Development</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
-        <p>Contact us today to learn how we can help your organization thrive in a competitive market.</p>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+      <div class="container position-relative">
+        <h1>Contact</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Contact</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section" style="background-color: white;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" >
+
+        <div class="row gy-4" >
+
+          <div class="col-lg-6" style="text-align: center;" >
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3 style="color: white;">Address</h3>
+              <p>Suite C5, Awmar Plaza, Behind NNPC Mega Station Joseph Gomwalk Street, Gudu District, Abuja.</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3 style="color: white;">Call Us</h3>
+              <p> +2348054134516, 08033156258, 08055114571</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-2 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3 style="color: white;">Email Us</h3>
+              <p>info@bwsmsolutions.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>End Google Maps -->
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400" >
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-6 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Black & White Smart Solutions Hub Ltd</span>
+          </a>
+          <div class="footer-contact pt-3" >
+            <p>Suite C5, Awmar Plaza, Behind NNPC Mega Station Joseph Gomwalk Street, Gudu District,</p>
+            <p> Abuja.</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+2348054134516, 08033156258, 08055114571</span></p>
+            <p><strong>Email:</strong> <span>info@bwsmsolutions.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a> -->
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <!-- <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Building and Civil Construction Works</a></li>
+            <li><a href="services.html">Management Consultancy Services</a></li>
+            <li><a href="services.html">Centre for Business Solutions</a></li>
+            <li><a href="services.html">General Contract Services</a></li>
+            <li><a href="services.html">Procurement & Logistics Services</a></li>
+            <li><a href="services.html">Human Capital Development</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div> -->
+
+      </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2025 Black & White Smart Solutions Hub Ltd. All Rights Reserved.</p>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Black & White Smart Solutions Hub Ltd</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+
+      </div>
     </div>
 
-    <!-- Bootstrap JS and Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
