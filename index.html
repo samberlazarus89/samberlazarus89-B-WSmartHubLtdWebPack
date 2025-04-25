@@ -1,314 +1,720 @@
-<!DOCTYPE html>  
-<html lang="en">  
+<!DOCTYPE html>
+<html lang="en">
 
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Black & White Smart Solutions Hub Ltd</title>  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">  
-    <style>  
-        .carousel-item {  
-            height: 500px;  
-            background-size: cover;  
-            background-position: center;  
-        }  
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Black & White Smart Solutions Hub Ltd</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="img/lo1.png" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" style="background-color: white;">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="img/lo1.PNG" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+        <!-- <h1 class="sitename">Black & White Smart Solutions Hub Ltd</h1> <span>.</span> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li class="dropdown"><a href="about.html"><span>Who We Are </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+              <li><a href="#mission">Our Mission</a></li>
+              <li><a href="#vision">Our Vision</a></li>
+              <li><a href="#values">Our Values</a></li>
+              <li><a href="#teams">Our Teams </a></li>
+              </ul>
+            </li></li>
+          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+            <li><a href="#building">Building and Civil Construction Works</a></li>
+            <li><a href="#management">Management Consultancy Services</a></li>
+            <li><a href="#solutions">Centre for Business Solutions</a></li>
+            <li><a href="#contract">General Contract Services</a></li>
+            <li><a href="#procurement">Procurement & Logistics Services</a></li>
+            <li><a href="#capital">Human Capital Development</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="info d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg text-center">
+              <h2>Welcome To <br> Black & White Smart Solutions Hub Ltd</h2>
+              <p style="font-size: large; color: aqua;">Crafting Innovation in Construction: Your Journey Starts Here!"</p>
+              <a href="contact.html" class="btn-get-started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item">
+          <img src="img/cons6.webp" alt="">
+        </div>
+
+        <div class="carousel-item active">
+          <img src="img/Capture.PNG" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/cc1.PNG" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-5.jpg" alt="">
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+    <div style="background-color: aliceblue;">
+      <hr>
+      <hr>
+    </div>
+
+
+    <!-- Get Started Section -->
+    <!-- <section id="get-started" class="get-started section" style="background: rgb(247, 242, 242); color: black;">
+
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <div class="content">
+              <h3>Minus hic non reiciendis ea possimus at quia.</h3>
+              <p>Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor. Aut iusto ipsa. Eos ipsum nobis ipsa soluta itaque perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi possimus ut delectus dicta.
+              </p>
+              <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt porro magni qui necessitatibus dolorem at animi cupiditate.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
+            <form action="forms/quote.php" method="post" class="php-email-form">
+              <h3>Get a quote</h3>
+              <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
+              <div class="row gy-3">
+
+                <div class="col-12">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required="">
+                </div>
+
+                <div class="col-12 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Phone" required="">
+                </div>
+
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+
+                  <button type="submit">Get a quote</button>
+                </div>
+
+              </div>
+            </form>
+          </div> <!- End Quote Form -->
+
+        <!-- </div>
+
+      </div>
+
+    </section> /Get Started Section -->
     
-        .carousel-caption {  
-            background-color: rgba(0, 0, 0, 0.7);  
-            padding: 20px;  
-            border-radius: 8px;  
-        }  
     
-        .gallery-carousel {  
-            height: 300px;  
-        }  
+   
+
+    <!-- who we are Section -->
+    <section id="constructions" class="constructions section">  <!--style="background-image: url(img/background2.PNG);"-->
+
+      <!-- Section Title -->
+      <div  class="container section-title" data-aos="fade-up">
+        <h2 style="color: white;">Who We Are</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div id="mission" class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg"><img src="img/mission.PNG" alt=""></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Our Mission</h4>
+                    <p>To be the leading smart solutions company in projects and services in Africa.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div id="vision" class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg"><img src="img/vision-1536x905.jpg" alt=""></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Our Vision </h4>
+                    <p>To help steer the growth of businesses across Africa by developing smart technology-based solutions, safely and consistently delivering quality and innovative projects and services.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div id="values" class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg"><img src="img/values1.PNG" alt=""></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Our Core Values</h4>
+                    <ul class="values-list">  
+                      <li><strong>Integrity:</strong> <p> We uphold the highest standards of integrity in all our actions.</p></li>  
+                      <li><strong>Excellence:</strong><p>We strive for excellence in everything we do.</p></li>  
+                      <li><strong>Innovation:</strong> <p>We embrace innovation to stay ahead in a competitive environment.</p></li>  
+                      <li><strong>Collaboration:</strong> <p>We work together with our clients and partners to achieve mutual success.</p></li>  
+                  </ul>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div id="teams" class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg"><img src="img/our team.PNG" alt=""></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Our Teams</h4>
+                    <p>Black and White Smart Solutions Hub Ltd has a dedicated team of experts working around the clock to ensure that our customers receive the best contacts, information, business management, and marketing talent they need to become more profitable, better informed, and competitive throughout their business cycle. We are committed to serving our clients with integrity, honesty, and openness.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /who we are Section -->
+   
+
     
-        .gallery-item {  
-            height: 100%;  
-            background-size: cover;  
-            background-position: center;  
-            transition: opacity 0.3s ease-in-out;
-        }  
-    
-        /* Ensure no margin and padding issues */  
-        body {  
-            padding: 0; /* No padding on body */  
-            margin: 0; /* No margin on body */  
-        }  
-    
-        .main-content {  
-            display: flex;  
-            flex-direction: column; /* Arrange children in a column */  
-            align-items: stretch; /* Center children horizontally */  
-            margin: 0;  
-            padding: 20px; /* Padding for content */  
-        }  
-        
-       /* Updated styling for the h1 with logo */
-h1 {
-    margin-bottom: 20px; /* Add bottom margin for spacing */
-    display: flex;
-    align-items: center; /* Vertically center the logo and text */
-    justify-content: center; /* Horizontally center the content */
-    font-size: 4rem; /* Increased font size for a bigger appearance */
-    font-weight: bold; /* Make the text bold */
-    text-align: center; /* Ensure text is centered */
-    line-height: 1.2; /* Adjust line height for better spacing */
-}
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
 
-/* Updated styling for the logo */
-.logo {
-    max-height: 300px; /* Increased maximum height for a larger logo */
-    margin-right: 20px; /* Add space between logo and text */
-}
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p style="color: black;">At Black & White Smart Solutions Hub Ltd, we offer a comprehensive range of services designed to meet the diverse needs of our clients. Our commitment to quality, innovation, and customer satisfaction ensures that we deliver solutions that not only meet but exceed expectations. Our key areas of service include:</p>
+      </div><!-- End Section Title -->
 
+      <div class="container">
 
-        /* Add margin to the carousel to separate it from h1 */
-        .carousel-container {  
-            display: flex;  
-            justify-content: center;  
-            align-items: center;  
-            height: 400px;  
-            padding: 0; /* Remove padding to eliminate spacing */  
-            width: 100%; /* Ensure it occupies full width */  
-            margin-top: 40px; /* Add space between h1 and carousel */
-        }  
+        <div class="row gy-4">
 
-        .testimonials-section, .contact-section {
-    padding: 40px 0; /* Add vertical padding for balanced spacing */
-    background-color: #f9f9f9; /* Light background for visual distinction */
-    border-top: 1px solid #ddd; /* Subtle border to separate sections */
-}
+          <div id="building" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-building"></i>
+              </div>
+              <h3>Building and Civil Construction Works</h3>
+              <p style="color: black;">Delivering top-notch construction solutions tailored to meet your specific needs. Our experienced team ensures quality craftsmanship and adherence to timelines, creating spaces that inspire and endure.</p>
+              
+            </div>
+          </div><!-- End Service Item -->
 
-.testimonials-section h2, .contact-section h2 {
-    font-size: 1.75rem; /* Slightly larger font size for headers */
-    font-weight: bold; /* Emphasize section headers */
-    color: #333; /* Professional dark color */
-}
+          <div id="management" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3>Management Consultancy Service</h3>
+              <p style="color: black;">Elevate your business performance with our expert management consultancy. We provide strategic insights and tailored solutions to streamline processes, enhance productivity, and achieve lasting success.</p>
+            
+            </div>
+          </div><!-- End Service Item -->
 
-.testimonials-section .row, .contact-section p {
-    margin-top: 20px; /* Space between elements */
-}
+          <div id="contract" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-tools"></i>
+              </div>
+              <h3>General Contract Services</h3>
+              <p style="color: black;">Trust us with your project management needs. Our general contract services ensure seamless coordination, adherence to budgets, and high-quality standards, making your construction journey smooth and efficient.</p>
+              
+            </div>
+          </div><!-- End Service Item -->
 
-blockquote {
-    background-color: #fff; /* Add background to quotes for emphasis */
-    border-left: 5px solid #0c0c0cee; /* Highlight quotes with a colored border */
-    padding: 15px 20px; /* Add padding for better readability */
-    border-radius: 5px; /* Round corners for modern design */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-}
+          <div id="procurement" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-truck"></i>
+              </div>
+              <h3>Procurement & Logistics Services</h3>
+              <p style="color: black;">Optimize your supply chain with our comprehensive procurement and logistics services. We manage sourcing, purchasing, and delivery, ensuring that you receive the right materials at the right time, every time.
+              </p>
+              
+            </div>
+          </div><!-- End Service Item -->
 
-blockquote p {
-    font-size: 1.1rem; /* Slightly larger font for quotes */
-    color: #0e0d0d; /* Softer text color for readability */
-}
+          <div id="capital" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-user-graduate"></i>
+              </div>
+              <h3>
+                Human Capital Development</h3>
+              <p style="color: black;">Empower your workforce with our human capital development programs. We provide training and development solutions designed to enhance skills, foster growth, and drive organizational success.</p>
+              
+            </div>
+          </div><!-- End Service Item -->
 
-blockquote footer {
-    font-size: 0.9rem; /* Smaller font for client name */
-    color: #080808; /* Lighter color for less emphasis */
-}
+          <div id="solutions" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <h3>Centre for Business Solutions</h3>
+              <p style="color: black;"> Your one-stop destination for innovative strategies and support. Our Centre for Business Solutions offers tailored advice and resources to help you navigate the complexities of modern business challenges.</p>
+             
+            </div>
+          </div><!-- End Service Item -->
 
-/* Keyframes for color inversion animation */
-@keyframes invertColors {
-    0%, 100% {
-        color: black;
-        background-color: white;
-    }
-    50% {
-        color: white;
-        background-color: black;
-    }
-}
+        </div>
 
-/* Animation for the logo */
-.animate-logo {
-    animation: fadeIn 6s ease-out infinite, invertColors 6s ease-in-out infinite; /* Slowed down animation */
-}
+      </div>
 
-/* Animation for the header text */
-.animate-header {
-    animation: slideIn 5s ease-out 4s infinite, invertColors 6s ease-in-out infinite; /* Slowed down animation */
-}
+    </section><!-- /Services Section -->
 
-/* Animation for the intro text */
-.animate-text {
-    animation: fadeIn 6s ease-out 3s infinite, invertColors 6s ease-in-out infinite; /* Slowed down animation */
-}
+    <section id="alt-services" class="alt-services section">
 
-/* Keyframes for fade-in effect */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-}
+      <div class="container">
 
-/* Keyframes for sliding-in effect */
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    50% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-}
+        <div class="row justify-content-around gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="img/CEO_-removebg-preview.png" alt="">
+          </div>
 
+          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <h2 style="color: aqua;">Message from Our CEO</h2>
+            <p>Dear Valued Clients,</p>
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <h4 style="color: aqua;">Your Partner in Navigating Modern Business Needs</h4>
+                <p>At Black & White Smart Solutions Hub Ltd, we are dedicated to providing the highest quality services that meet the evolving needs of the modern business world.</p>
+              </div>
+            </div><!-- End Icon Box -->
 
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-rocket"></i>
+              <div>
+                <h4 style="color: aqua;">Transforming Ideas into Reality with Precision"</h4>
+                <p>Our mission is to bring innovative solutions and ensure the success of your projects, whether in construction, consultancy, or any of the specialized services we offer. We take great pride in our work and in delivering results that exceed expectations.</p>
+              </div>
+            </div><!-- End Icon Box -->
 
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-handshake"></i>
+              <div>
+                <h4 style="color: aqua;">Building Strong Relationships for Lasting Success"</h4>
+                <p>Our commitment to excellence drives us to continuously improve and adapt to the challenges our clients face. As we grow, we continue to prioritize strong relationships, transparent communication, and timely delivery.</p>
+              </div>
+            </div><!-- End Icon Box -->
 
-</style>  
-    
-    
-</head>  
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-user-friends"></i>
+              <div>
+                <h4 style="color: aqua;">Partner with Us for Your Next Project</h4>
+                <p>I invite you to partner with us on your next project and experience firsthand the benefits of working with a team that truly cares about your success.</p>
+              <p style="color: aqua; font-weight: 900;">
+                Best Regards,<br>
+                Sam Tor-Mchivga <br>
+                CEO,Black AND WHITE SMART SOLUTIONS HUB LTD
+              </p>
+              </div>
+            </div><!-- End Icon Box -->
+          </div>
+        </div>
 
-<body>  
-    <!-- Navbar -->  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
-        <div class="container-fluid">  
-            <a class="navbar-brand" href="#">Black & White Smart Solutions Hub Ltd</a>  
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">  
-                <span class="navbar-toggler-icon"></span>  
-            </button>  
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">  
-                <ul class="navbar-nav">  
-                    <li class="nav-item">  
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>  
-                    </li>  
-                    <li class="nav-item dropdown">  
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
-                            Services  
-                        </a>  
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">  
-                            <li><a class="dropdown-item" href="Building and Construction.html">Building and Civil Construction Works</a></li>  
-                            <li><a class="dropdown-item" href="Management & Consultancy.html">Management Consultancy Services</a></li>  
-                            <li><a class="dropdown-item" href="Center for business solutions.html">Centre for Business Solutions</a></li>  
-                            <li><a class="dropdown-item" href="General contracts.html">General Contract Services</a></li>  
-                            <li><a class="dropdown-item" href="Procurement&Logistics.html">Procurement & Logistics Services</a></li>  
-                            <li><a class="dropdown-item" href="Human-capital.html">Human Capital Development</a></li>  
-                        </ul>  
-                    </li>  
-                    <li class="nav-item">  
-                        <a class="nav-link" href="About.html">About</a>  
-                    </li>  
-                    <li class="nav-item">  
-                        <a class="nav-link" href="Contact.html">Contact</a>  
-                    </li>  
-                </ul>  
-            </div>  
-        </div>  
-    </nav>  
+      </div>
 
-    <!-- Main content -->  
-    <div class="container main-content">
-        <h1 class="text-center animate-header">
-            <img src="pictures/b&w.jpg" alt="Logo" class="logo animate-logo">
-            Black & White Smart Solutions Hub Ltd
-        </h1>
-        <p class="text-center animate-text">
-            <strong>We specialize in a range of services to meet your business needs, including:</strong>
-        </p>
+    </section><!-- /Alt Services Section -->
+
+    <div style="background-color: aliceblue;">
+      <hr>
+      <hr>
     </div>
     
-        
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
 
-        <!-- Service Carousel (Directly below services section) -->  
-        <div id="serviceCarousel" class="carousel slide carousel-container" data-bs-ride="carousel">  
-            <div class="carousel-inner">  
-                <div class="carousel-item active" style="background-image: url('pictures/construction3.jpg');">  
-                    <div class="carousel-caption d-none d-md-block">  
-                        <h5>Building and Civil Construction Works</h5>  
-                    </div>  
-                </div>  
-                <div class="carousel-item" style="background-image: url('pictures/managementandconsultancywebwall.jpg');">  
-                    <div class="carousel-caption d-none d-md-block">  
-                        <h5>Management Consultancy Services</h5>  
-                    </div>  
-                </div>  
-                <div class="carousel-item" style="background-image: url('pictures/businesswebwall2.jpg');">  
-                    <div class="carousel-caption d-none d-md-block">  
-                        <h5>Centre for Business Solutions</h5>  
-                    </div>  
-                </div>  
-                <div class="carousel-item" style="background-image: url('pictures/contractswebwall.jpg');">  
-                    <div class="carousel-caption d-none d-md-block">  
-                        <h5>General Contract Services</h5>  
-                    </div>  
-                </div>  
-                <div class="carousel-item" style="background-image: url('pictures/logisticsandprocurement.jpg');">  
-                    <div class="carousel-caption d-none d-md-block">  
-                        <h5>Procurement & Logistics Services</h5>  
-                    </div>  
-                </div>  
-                <div class="carousel-item" style="background-image: url('pictures/humancapitalwebwall.jpg');">  
-                    <div class="carousel-caption d-none d-md-block">  
-                        <h5>Human Capital Development</h5>  
-                    </div>  
-                </div>  
-            </div>  
-            <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">  
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>  
-                <span class="visually-hidden">Previous</span>  
-            </button>  
-            <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">  
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>  
-                <span class="visually-hidden">Next</span>  
-            </button>  
-        </div>  
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: white;">Projects</h2>
+        <p>Explore our diverse portfolio of innovative projects that showcase our commitment to excellence and transformative impact</p>
+      </div><!-- End Section Title -->
 
-        
+      <div class="container">
 
-       <!-- Testimonials Section -->
-<div class="testimonials-section mt-5">
-    <h2 class="text-center mb-4">What Our Clients Say</h2>
-    <div class="row g-4">
-        <div class="col-md-4">
-            <blockquote class="blockquote text-center">
-                <p class="mb-0">"Excellent service and support!"</p>
-                <footer class="blockquote-footer">Dele Ayinde</footer>
-            </blockquote>
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <!-- <li data-filter=".filter-remodeling">Remodeling</li>
+            <li data-filter=".filter-construction">Construction</li>
+            <li data-filter=".filter-repairs">Repairs</li>
+            <li data-filter=".filter-design">Design</li> -->
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="img/Residential complex.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Project</h4>
+                  <p>Building Residential Complex</p>
+                  <a href="img/Residential complex.jpg"  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="img/commercialBuilding.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Project</h4>
+                  <p>Commercial Building Construction</p>
+                  <a href="img/commercialBuilding.jpg"   class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="img/Infrastructure-Development-in-Africa.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Project</h4>
+                  <p>Infrastructure Development</p>
+                  <a href="img/Infrastructure-Development-in-Africa.jpg" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/design-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/projects/design-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/remodeling-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/projects/remodeling-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/construction-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/projects/construction-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/repairs-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/projects/repairs-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/design-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/projects/design-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/remodeling-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/projects/remodeling-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/construction-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/projects/construction-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/repairs-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/projects/repairs-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/design-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/projects/design-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
         </div>
-        <div class="col-md-4">
-            <blockquote class="blockquote text-center">
-                <p class="mb-0">"Professional and reliable team."</p>
-                <footer class="blockquote-footer">Mustapha Abdulkareem</footer>
-            </blockquote>
+
+      </div>
+
+    </section><!-- /Projects Section -->
+
+   
+
+     
+<!-- footer section -->
+    
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-6 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Black & White Smart Solutions Hub Ltd</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Suite C5, Awmar Plaza, Behind NNPC Mega Station Joseph Gomwalk Street, Gudu District,</p>
+            <p> Abuja.</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+2348054134516, 08033156258, 08055114571</span></p>
+            <p><strong>Email:</strong> <span>info@bwsmsolutions.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a> -->
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+          </div>
         </div>
-        <div class="col-md-4">
-            <blockquote class="blockquote text-center">
-                <p class="mb-0">"Highly recommended for your business needs!"</p>
-                <footer class="blockquote-footer">Anthony Chukwuemeka</footer>
-            </blockquote>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#constructions">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li> -->
+          </ul>
         </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#building">Building and Civil Construction Works</a></li>
+            <li><a href="#management">Management Consultancy Services</a></li>
+            <li><a href="#solutions">Centre for Business Solutions</a></li>
+            <li><a href="#contract">General Contract Services</a></li>
+            <li><a href="#procurement">Procurement & Logistics Services</a></li>
+            <li><a href="#capital">Human Capital Development</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div> -->
+
+      </div>
     </div>
-</div>
 
-<!-- Contact Information Section -->
-<div class="contact-section mt-5">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <p class="text-center mb-2">For inquiries, please reach us at:</p>
-    <p class="text-center">
-        <strong>Email:</strong> info@bwsmarthub.com |
-        <strong>Phone:</strong> +2348054134516, 08033156258, 08055114571
-    </p>
-</div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Black & White Smart Solutions Hub Ltd</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
 
-    <!-- Bootstrap JS and Popper -->  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
-</body>  
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 
 </html>
